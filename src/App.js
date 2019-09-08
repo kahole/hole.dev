@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import LispREPL from './LispREPL.js';
 
 function App() {
   return (
@@ -23,11 +24,10 @@ function App() {
           <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">on NPM</a>)</li>
         </ul>
       </article>
-      /*<article>
+      <article>
         <h1 class="articleHeader" id="lisp">Lisp interpreter</h1>
-        <input>
-        </input>
-      </article>*/
+        <LispREPL />
+      </article>
       <footer>
         <p>Updated 2019/09/08</p>
       </footer>
