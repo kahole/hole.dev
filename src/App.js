@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <article>
+        <h1><small>(developer</small>
+          Kristian Hole)</h1>
+        <h2>Under construction... ☔</h2>
+        <nav>
+          <ul>
+            <li><a class="navLinks" href="#projects">Projects</a></li>
+            <li><a class="navLinks" href="#articles">Articles</a></li>
+            <li><a class="navLinks" href="#lisp">Lisp interpreter</a></li>
+            <li><a class="navLinks" href="https://github.com/kahole">Github</a></li>
+          </ul>
+        </nav>
+      </article>
+      <article>
+        <h1 class="articleHeader" id="projects">Projects</h1>
+        <ul>
+          <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">on NPM</a>)</li>
+        </ul>
+      </article>
+      /*<article>
+        <h1 class="articleHeader" id="lisp">Lisp interpreter</h1>
+        <input>
+        </input>
+      </article>*/
+      <footer>
+        <p>Updated 2019/09/08</p>
+      </footer>
     </div>
   );
 }
