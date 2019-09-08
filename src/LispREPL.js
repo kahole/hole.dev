@@ -4,12 +4,38 @@ import {tokenize, parse, interpret} from './lisp.js'
 
 function LispREPL() {
 
-  const [history, setHistory] = useState([]);
+  const sampleHistory = [
+    // "> (+ 2 3)",
+    // "5",
+    "> (set 'myFruit 'apple)",
+    "apple",
+    "> (if (not (eq? (+ (* 10 2) 20) 400)) myFruit 'orange)",
+    "apple",
+    "> (set 'pow2 (lambda (x) (* x x)))",
+    "[Function]",
+    "> (pow2 5)",
+    "25",
+    "> (let (k 3) (+ k 6))",
+    "9",
+    // "> (set 'x (list (list 'a 5)))",
+    // "[ [ 'a', 5 ] ]",
+    "> (cdr (assoc 'a (list (list 'a 5))))",
+    "5"
+  ];
+
+  // TODO: make it run them and then store the result in history, properly execute them
+  sampleHistory.forEach( (h, i) => {
+    if (i % 2 == 0)  {
+      interpret(parse(tokenize(h.substring(2))), {});
+    }
+  });
+  
+  const [history, setHistory] = useState(sampleHistory);
   const [currentLine, setCurrentLine] = useState("");
   
 
-  let historyList = history.map( h => {
-    return <p className="replHistoryItem">{h}</p>;
+  let historyList = history.map( (h,i) => {
+    return <p style={ i % 2 == 1 ? {color: 'green' } : {}} className="replHistoryItem">{h}</p>;
   });
 
 
@@ -20,7 +46,7 @@ function LispREPL() {
   const run = () => {
     let result;
     try {
-      result = JSON.stringify(interpret(parse(tokenize(currentLine)), {})[0]);
+      result = interpret(parse(tokenize(currentLine)), {})[0].toString();
     } catch (e) {
       result = e.message;
     }
@@ -36,8 +62,8 @@ function LispREPL() {
   return (
     <div className="LispREPL">
       <div className="repl">
-        <input className="replInput" value={currentLine} onChange={onCurrentLineChange} onKeyPress={onCurrentLineKeyPress} />
-      { historyList.reverse() }
+        <input className="replInput" placeholder="> " value={currentLine} onChange={onCurrentLineChange} onKeyPress={onCurrentLineKeyPress} />
+        { historyList.reverse() }
       </div>
     </div>
   );

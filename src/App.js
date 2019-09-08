@@ -14,7 +14,6 @@ function App() {
             <li><a class="navLinks" href="#projects">Projects</a></li>
             <li><a class="navLinks" href="#articles">Articles</a></li>
             <li><a class="navLinks" href="#lisp">Lisp interpreter</a></li>
-            <li><a class="navLinks" href="#lisp">Legg til WEBGL</a></li>
             <li><a class="navLinks" href="https://github.com/kahole">Github</a></li>
           </ul>
         </nav>
@@ -27,7 +26,9 @@ function App() {
       </article>
       <article>
         <h1 class="articleHeader" id="lisp">Lisp interpreter</h1>
-        <LispREPL />
+      <LispREPL />
+      <br/>
+        <p>See full list of built-in funtions <a href="https://github.com/kahole/lisp_in_js">here.</a></p>
       </article>
       <footer>
         <p>Updated 2019/09/08</p>
