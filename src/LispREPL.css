@@ -1,0 +1,40 @@
+
+.repl {
+    background-color: #282a36;
+    /* min-height: 10rem; */
+    /* max-height: 10rem; */
+    border-radius: 0.3rem;
+    /* padding: 0.2rem; */
+    padding-top: 0.2rem;
+
+
+    height: 15rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.replHistoryItem {
+    padding-left: 0.2rem;
+    font-size: 18px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.replInput {
+    background-color: #44475a;
+    color:white;
+    outline:none;
+    transition:height 1s;
+    -webkit-transition:height 1s;
+
+    border: none;
+    /* border-radius: 0.3rem; */
+
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 18px;
+}

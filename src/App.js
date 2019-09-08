@@ -14,6 +14,7 @@ function App() {
             <li><a class="navLinks" href="#projects">Projects</a></li>
             <li><a class="navLinks" href="#articles">Articles</a></li>
             <li><a class="navLinks" href="#lisp">Lisp interpreter</a></li>
+            <li><a class="navLinks" href="#lisp">Legg til WEBGL</a></li>
             <li><a class="navLinks" href="https://github.com/kahole">Github</a></li>
           </ul>
         </nav>
