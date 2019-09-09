@@ -38,6 +38,9 @@ function LispREPL() {
   };
 
   const run = () => {
+    if (currentLine.length === 0)
+      return;
+    
     let result;
     try {
       result = interpret(parse(tokenize(currentLine)), {})[0];
