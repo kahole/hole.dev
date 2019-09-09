@@ -12,9 +12,9 @@ function App() {
         <nav>
           <ul>
             <li><a className="navLinks" href="#projects">Projects</a></li>
-      {/*<li><a className="navLinks" href="#articles">Articles</a></li>*/}
+            {/*<li><a className="navLinks" href="#articles">Articles</a></li>*/}
             <li><a className="navLinks" href="#lisp">Lisp interpreter</a></li>
-            <li><a className="navLinks" href="#webgl">Tiny Planet</a></li>
+            <li><a className="navLinks" href="ppp_webgl">Tiny Planet</a></li>
             <li><a className="navLinks" href="https://github.com/kahole">Github</a></li>
           </ul>
         </nav>
@@ -37,12 +37,12 @@ function App() {
         <br/>
         <p>See full list of built-in funtions <a href="https://github.com/kahole/lisp_in_js">here.</a></p>
       </article>
-      <article>
+      {/*<article>
         <h1 className="articleHeader" id="webgl">Tiny Planet</h1>
         <div className="webglFrameWrapper">
-      {/*<iframe className="webglFrame" src="ppp_webgl/index.html"/>*/}
+        <iframe className="webglFrame" src="ppp_webgl/index.html"/>
         </div>
-      </article>
+      </article>*/}
       <footer>
         <p>Updated 2019/09/08</p>
       </footer>
