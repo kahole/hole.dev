@@ -12,7 +12,7 @@ function App() {
         <nav>
           <ul>
             <li><a className="navLinks" href="#projects">Projects</a></li>
-            <li><a className="navLinks" href="#articles">Articles</a></li>
+            {/*<li><a className="navLinks" href="#articles">Articles</a></li>*/}
             <li><a className="navLinks" href="#lisp">Lisp interpreter</a></li>
             {/*<li><a className="navLinks" href="#lisp">Legg til WEBGL</a></li>*/}
             <li><a className="navLinks" href="https://github.com/kahole">Github</a></li>
