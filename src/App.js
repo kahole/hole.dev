@@ -40,7 +40,7 @@ function App() {
       <article>
         <h1 className="articleHeader" id="webgl">Tiny Planet</h1>
         <div className="webglFrameWrapper">
-          <iframe className="webglFrame" src="ppp_webgl/index.html"/>
+      {/*<iframe className="webglFrame" src="ppp_webgl/index.html"/>*/}
         </div>
       </article>
       <footer>
