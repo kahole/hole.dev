@@ -19,17 +19,35 @@
     font-size: 18px;
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-.replInput {
+
+.replInputWrapper {
+    display: flex;
+    flex-direction: row;
     background-color: #44475a;
+    margin-top: 0.3rem;
+    width: 100%;
+}
+
+.replPrompt {
+    flex: 1;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 18px;
+    padding: 0.25rem;
+}
+
+.replInput {
     color:white;
     outline:none;
     transition:height 1s;
     -webkit-transition:height 1s;
 
+    background-color: #44475a;
     border: none;
     /* border-radius: 0.3rem; */
 
-    width: 100%;
+    flex: 50;
+
+    /* width: 100%; */
     padding: 0.2rem;
     margin: 0;
     margin-left: 0;
