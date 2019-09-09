@@ -35,7 +35,7 @@ function App() {
         <h1 className="articleHeader" id="lisp">Lisp interpreter</h1>
         <LispREPL />
         <br/>
-        <p>See full list of built-in funtions <a href="https://github.com/kahole/lisp_in_js">here.</a></p>
+        <p>See full list of built-in funtions <a href="https://github.com/kahole/lisp_in_js#builtins">here.</a></p>
       </article>
       {/*<article>
         <h1 className="articleHeader" id="webgl">Tiny Planet</h1>
