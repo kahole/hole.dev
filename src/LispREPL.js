@@ -4,40 +4,31 @@ import {tokenize, parse, interpret} from './lisp.js'
 
 function LispREPL() {
 
-  const sampleHistory = [
+  const sampleExpressions = [
     // "> (+ 2 3)",
-    // "5",
-    "> (set 'myFruit 'apple)",
-    "apple",
-    "> (if (not (eq? (+ (* 10 2) 20) 400)) myFruit 'orange)",
-    "apple",
-    "> (set 'pow2 (lambda (x) (* x x)))",
-    "[Function]",
-    "> (pow2 5)",
-    "25",
-    "> (let (k 3) (+ k 6))",
-    "9",
+    "(set 'myFruit 'apple)",
+    "(if (not (eq? (+ (* 10 2) 20) 400)) myFruit 'orange)",
+    "(set 'pow2 (lambda (x) (* x x)))",
+    "(pow2 5)",
+    "(let (k 3) (+ k 6))",
     // "> (set 'x (list (list 'a 5)))",
-    // "[ [ 'a', 5 ] ]",
-    "> (cdr (assoc 'a (list (list 'a 5))))",
-    "5"
+    "(cdr (assoc 'a (list (list 'a 5))))",
   ];
 
-  // TODO: make it run them and then store the result in history, properly execute them
-  sampleHistory.forEach( (h, i) => {
-    if (i % 2 == 0)  {
-      interpret(parse(tokenize(h.substring(2))), {});
-    }
+  const sampleHistory = [];
+
+  sampleExpressions.forEach( h => {
+    sampleHistory.push("> " + h);
+    const result = interpret(parse(tokenize(h)), {})[0];
+    sampleHistory.push( typeof result === "function" ? {}.toString.call(result) : result.toString());
   });
   
   const [history, setHistory] = useState(sampleHistory);
   const [currentLine, setCurrentLine] = useState("");
   
-
   let historyList = history.map( (h,i) => {
-    return <p style={ i % 2 == 1 ? {color: 'green' } : {}} className="replHistoryItem">{h}</p>;
+    return <p key={i} style={ i % 2 === 1 ? {color: 'green' } : {}} className="replHistoryItem">{h}</p>;
   });
-
 
   const onCurrentLineChange = e => {
     setCurrentLine(e.target.value);
@@ -46,7 +37,8 @@ function LispREPL() {
   const run = () => {
     let result;
     try {
-      result = interpret(parse(tokenize(currentLine)), {})[0].toString();
+      result = interpret(parse(tokenize(currentLine)), {})[0];
+      result = typeof result === "function" ? {}.toString.call(result) : result.toString();
     } catch (e) {
       result = e.message;
     }
