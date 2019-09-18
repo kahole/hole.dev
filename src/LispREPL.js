@@ -6,10 +6,9 @@ import {match} from 'egna';
 function LispREPL() {
 
   const sampleExpressions = [
-    "(set 'myFruit 'apple)",
-    "(if (not (eq? (+ (* 10 2) 20) 400)) myFruit 'orange)",
     "(set 'pow2 (lambda (x) (* x x)))",
     "(pow2 5)",
+    "(if (eq? (+ (* 10 2) 20) 400) 'apple 'orange)",
     "(let (k 3) (+ k 6))",
     "(cdr (assoc 'a (list (list 'a 5))))",
   ];
