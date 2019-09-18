@@ -9,7 +9,7 @@
 
 
     height: 15rem;
-    overflow: auto;
+    overflow: scroll;
     display: flex;
     flex-direction: column-reverse;
 }
