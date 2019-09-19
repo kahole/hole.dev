@@ -1,29 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './LispREPL.css';
 import {tokenize, parse, interpret} from './lisp.js'
 import {match} from 'egna';
 
 function LispREPL() {
-
-  const sampleExpressions = [
-    "(set 'pow2 (lambda (x) (* x x)))",
-    "(pow2 5)",
-    "(if (eq? (+ (* 10 2) 20) 400) 'apple 'orange)",
-    "(let (k 3) (+ k 6))",
-    "(cdr (assoc 'a (list (list 'a 5))))",
-  ];
-
-  const sampleHistory = [];
-
-  sampleExpressions.forEach( h => {
-    const command = h;
-    const output = interpret(parse(tokenize(command)), {})[0];
-    sampleHistory.push({command, output: typeof output === "function" ? {}.toString.call(output) : output.toString()});
-  });
   
   const [historyNavIndex, setHistoryNavIndex] = useState(0);
-  const [history, setHistory] = useState(sampleHistory);
+  const [history, setHistory] = useState([]);
   const [currentLine, setCurrentLine] = useState("");
+
+  useEffect(() => {
+
+    const sampleExpressions = [
+      "(set 'pow2 (lambda (x) (* x x)))",
+      "(pow2 5)",
+      "(if (eq? (+ (* 10 2) 20) 400) 'apple 'orange)",
+      "(let (k 3) (+ k 6))",
+      "(cdr (assoc 'a (list (list 'a 5))))",
+    ];
+
+    async function sampleInter() {
+      const interpreted = [];
+      for (let i = 0; i < sampleExpressions.length; i++) {
+        const command = sampleExpressions[i];
+        const output = (await interpret(parse(tokenize(command)), {}))[0];
+        interpreted.push({command, output: typeof output === "function" ? {}.toString.call(output) : output.toString()});
+      }
+      return interpreted;
+    } 
+
+    sampleInter().then( h => {
+      setHistory(h);
+    });
+  }, []);
+  
   
   let historyList = history.map( ({command, output}, i) => {
     return <span key={i}>
@@ -36,13 +46,13 @@ function LispREPL() {
     setCurrentLine(e.target.value);
   };
 
-  const run = () => {
+  const run = async () => {
     if (currentLine.length === 0)
       return;
     
     let result;
     try {
-      result = interpret(parse(tokenize(currentLine)), {})[0];
+      result = (await interpret(parse(tokenize(currentLine)), {}))[0];
       result = typeof result === "function" ? {}.toString.call(result) : result.toString();
     } catch (e) {
       result = e.message;
