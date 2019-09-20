@@ -4,7 +4,7 @@
   "homepage": "https://hole.dev",
   "private": true,
   "dependencies": {
-    "egna": "^1.0.5",
+    "egna": "^2.0.2",
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
