@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <article>
-        <h1><small>(developer</small>
+        <h1><small>(developer </small>
           Kristian Hole)</h1>
         <h2>Consultant at Netlight ☔</h2>
         <nav>
@@ -14,16 +14,18 @@ function App() {
             <li><a className="navLinks" href="#projects">Projects</a></li>
             {/*<li><a className="navLinks" href="#articles">Articles</a></li>*/}
             <li><a className="navLinks" href="#lisp">Lisp interpreter</a></li>
-            <li><a className="navLinks" href="ppp_webgl">Tiny Planet</a></li>
-            <li><a className="navLinks" href="https://github.com/kahole">Github</a></li>
+            {/*<li><a className="navLinks" href="ppp_webgl">Tiny Planet</a></li>*/}
+            {/*<li><a className="navLinks" href="https://github.com/kahole">Github</a></li>*/}
+            <li><a className="navLinks" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </article>
       <article>
         <h1 className="articleHeader" id="projects">Projects</h1>
         <ul>
-          <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">on NPM</a>)</li>
-          <li>Lisp-in-js (<a href="https://github.com/kahole/lisp_in_js">Github</a>)</li>
+          <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">NPM</a>)</li>
+          <li>Lisp and Reflective Tower in JS (<a href="https://github.com/kahole/lisp_in_js">Github</a>)</li>
+          <li><a href="ppp_webgl">Tiny Planet</a></li>
         </ul>
       </article>
       {/*<article>
@@ -37,6 +39,13 @@ function App() {
         <br/>
         <p>See full list of built-in funtions <a href="https://github.com/kahole/lisp_in_js#builtins">here.</a></p>
       </article>
+      <article>
+        <h1 className="articleHeader" id="contact">Contact</h1>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/kristian-andersen-hole-513421bb">LinkedIn</a></li>
+          <li><a href="https://github.com/kahole">Github</a></li>
+        </ul>
+      </article>
       {/*<article>
         <h1 className="articleHeader" id="webgl">Tiny Planet</h1>
         <div className="webglFrameWrapper">
@@ -44,7 +53,7 @@ function App() {
         </div>
       </article>*/}
       <footer>
-        <p>Updated 2019/09/10</p>
+        <p>Updated 2019/09/20</p>
       </footer>
     </div>
   );
