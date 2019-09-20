@@ -62,13 +62,15 @@ function LispREPL() {
     setHistoryNavIndex(0);
   };
 
-  const onKeyUp = e => {
+  const onCurrentLineKeyDown = e => {
     const navDelta = match(
-      'ArrowUp', () => 1,
-      'ArrowDown', () => -1,
-      _ => 0
+      'ArrowUp', 1,
+      'ArrowDown', -1,
+      0
     )(e.key);
 
+    if (navDelta !== 0)
+      e.preventDefault();
 
     if (navDelta !== 0) {
       if (historyNavIndex+navDelta > history.length)
@@ -84,6 +86,8 @@ function LispREPL() {
       const commandIndex = history.length - (historyNavIndex+navDelta);
       setCurrentLine(history[commandIndex].command);
     }
+
+    return false;
   };
 
   const onCurrentLineKeyPress = e => {
@@ -96,7 +100,7 @@ function LispREPL() {
       <div className="repl">
         <div className="replInputWrapper">
           <span className="replPrompt">&gt;</span>
-      <input className="replInput" value={currentLine} onChange={onCurrentLineChange} onKeyPress={onCurrentLineKeyPress} onKeyUp={onKeyUp} />
+      <input className="replInput" value={currentLine} onChange={onCurrentLineChange} onKeyPress={onCurrentLineKeyPress} onKeyDown={onCurrentLineKeyDown} />
         </div>
         { historyList.reverse() }
       </div>
