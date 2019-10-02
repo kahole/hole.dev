@@ -1,7 +1,10 @@
+html {
+    font-size: 21px;
+}
+
 * {
-  font-size: 21px;
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -13,7 +16,6 @@ body {
 }
 
 h1 {
-    font-size: 2.4rem;
     display: block;
     line-height: 1;
     margin-block-start: 0.67em;
@@ -27,6 +29,10 @@ h1 {
     padding-bottom: 1.0rem;
 }
 
+.pageHeader {
+    font-size: 2.4rem;
+}
+
 small {
     font-size: 1.5rem;
     display: block;
@@ -34,7 +40,7 @@ small {
 }
 
 @media screen and (min-width: 30em) {
-    h1 {
+    .pageHeader {
         font-size: 3.7rem;
     }
 
@@ -43,7 +49,7 @@ small {
     }
 }
 
-h2 {
+.pageSubtitle {
     font-weight: 300;
     font-size: 1.4rem;
     padding-bottom: 0.5rem;
@@ -56,7 +62,7 @@ h2 {
 main {
     margin-right: auto;
     margin-left: auto;
-    max-width: 40em;
+    max-width: 40rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -66,6 +72,16 @@ article {
     border-bottom-style: solid;
     border-bottom-width: 0.005rem;
     padding-bottom: 1rem;
+}
+
+.articleHeader {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+footer {
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
 }
 
 p {
@@ -88,14 +104,4 @@ a:visited.light-blue {
 ul {
     list-style-type: square;
     list-style-position: inside;
-}
-
-.articleHeader {
-    font-weight: 400;
-    font-size: 2rem;
-}
-
-footer {
-    padding-top: 1.0rem;
-    padding-bottom: 1.0rem;
 }

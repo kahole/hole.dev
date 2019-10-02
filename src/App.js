@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <article>
-        <h1><small>(developer </small>
+        <h1 className="pageHeader"><small>(developer </small>
           Kristian Hole)</h1>
-        <h2>Consultant at Netlight ☔</h2>
+        <h2 className="pageSubtitle">Consultant at Netlight ☔</h2>
         <nav>
           <ul>
             <li><a className="navLinks" href="#projects">Projects</a></li>
