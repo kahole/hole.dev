@@ -9,6 +9,10 @@
     flex-direction: column-reverse;
 }
 
+.repl::-webkit-scrollbar {
+    display: none;
+}
+
 .replHistoryItem {
     padding-left: 0.2rem;
     padding-top: 0.2rem;
