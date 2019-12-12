@@ -12,7 +12,7 @@ function App() {
         <nav>
           <ul>
             <li><a className="navLinks" href="#projects">Projects</a></li>
-            {/*<li><a className="navLinks" href="#articles">Articles</a></li>*/}
+            <li><a className="navLinks" href="#articles">Articles</a></li>
             <li><a className="navLinks" href="#lisp">Lisp interpreter</a></li>
             {/*<li><a className="navLinks" href="ppp_webgl">Tiny Planet</a></li>*/}
             {/*<li><a className="navLinks" href="https://github.com/kahole">Github</a></li>*/}
@@ -28,11 +28,11 @@ function App() {
           <li><a href="ppp_webgl">Tiny Planet</a></li>
         </ul>
       </article>
-      {/*<article>
+      <article>
         <h1 className="articleHeader" id="articles">Articles</h1>
           Thesis<br/>
-          <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/?locale-attribute=en">An evaluation of join-strategies in a distributed MySQL plugin architecture</a>
-      </article>*/}
+          <a href="http://hdl.handle.net/11250/2625818">An evaluation of join-strategies in a distributed MySQL plugin architecture</a>
+      </article>
       <article>
         <h1 className="articleHeader" id="lisp">Lisp interpreter</h1>
         <LispREPL />
@@ -53,7 +53,7 @@ function App() {
         </div>
       </article>*/}
       <footer>
-        <p>Updated 2019/09/20</p>
+        <p>Updated 2019/12/04</p>
       </footer>
     </div>
   );
