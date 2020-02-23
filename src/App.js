@@ -23,6 +23,7 @@ function App() {
       <article>
         <h1 className="articleHeader" id="projects">Projects</h1>
         <ul>
+          <li>Magit for VSCode (<a href="https://marketplace.visualstudio.com/items?itemName=kahole.magit">VS Marketplace</a>)</li>
           <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">NPM</a>)</li>
           <li>Lisp and Reflective Tower in JS (<a href="https://github.com/kahole/lisp_in_js">Github</a>)</li>
           <li><a href="ppp_webgl">Tiny Planet</a></li>
