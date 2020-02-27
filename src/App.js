@@ -54,7 +54,7 @@ function App() {
         </div>
       </article>*/}
       <footer>
-        <p>Updated 2019/12/04</p>
+        <p>Updated 2020/02/27</p>
       </footer>
     </div>
   );
