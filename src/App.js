@@ -6,15 +6,14 @@ function App() {
   return (
     <div className="App">
       <article>
-        <h1 className="pageHeader"><small>(developer </small>
-          Kristian Hole)</h1>
-        <h2 className="pageSubtitle">Consultant at Netlight ☔</h2>
+        <h1 className="pageHeader"><small>developer </small>
+          Kristian Hole</h1>
+        <h2 className="pageSubtitle">Consultant @ <a href="https://www.netlight.com/">Netlight</a> ☔</h2>
         <nav>
           <ul>
             <li><a className="navLinks" href="#projects">Projects</a></li>
             <li><a className="navLinks" href="#articles">Articles</a></li>
-            <li><a className="navLinks" href="#lisp">Lisp interpreter</a></li>
-            {/*<li><a className="navLinks" href="ppp_webgl">Tiny Planet</a></li>*/}
+            {/* <li><a className="navLinks" href="#lisp">Lisp interpreter</a></li> */}
             {/*<li><a className="navLinks" href="https://github.com/kahole">Github</a></li>*/}
             <li><a className="navLinks" href="#contact">Contact</a></li>
           </ul>
@@ -26,7 +25,7 @@ function App() {
           <li>Magit for VSCode (<a href="https://marketplace.visualstudio.com/items?itemName=kahole.magit">VS Marketplace</a>)</li>
           <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">NPM</a>)</li>
           <li>Lisp and Reflective Tower in JS (<a href="https://github.com/kahole/lisp_in_js">Github</a>)</li>
-          <li><a href="ppp_webgl">Tiny Planet</a></li>
+          <li><a href="ppp_webgl">WebGL demo</a></li>
         </ul>
       </article>
       <article>
@@ -54,7 +53,7 @@ function App() {
         </div>
       </article>*/}
       <footer>
-        <p>Updated 2020/02/27</p>
+        <p>Updated 2020/03/16</p>
       </footer>
     </div>
   );
