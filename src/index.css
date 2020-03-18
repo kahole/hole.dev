@@ -49,6 +49,7 @@ ul {
 
 .emoji {
     font-family: 'helvetica neue', helvetica, sans-serif;
+    font-size: 1.7rem;
 }
 
 @media screen and (min-width: 40rem) {
@@ -63,30 +64,12 @@ main {
     max-width: 50rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-}
-
-article {
-    border-color: #333333;
-    border-bottom-style: solid;
-    border-bottom-width: 0.005rem;
-    padding-bottom: 0.5rem;
     padding-top: 0.5rem;
-}
-
-footer {
-    padding-top: 1.0rem;
-    padding-bottom: 1.0rem;
 }
 
 a:link {
     color: #fb4934;
 }
-a:link.light-blue {
-    color: #00449E; 
-}
 a:visited {
-    color: rgb(191,90,242);
-}
-a:visited.light-blue {
-    color: #5E2CA5;
+    color: #fb4934;
 }
