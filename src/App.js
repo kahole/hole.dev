@@ -56,9 +56,10 @@ function App() {
         <iframe className="webglFrame" src="ppp_webgl/index.html"/>
         </div>
       </article>*/}
-      {/* <footer>
-        <p>Updated 2020/03/16</p>
-      </footer> */}
+      <footer>
+        {/* <p>Updated 2020/03/16</p> */}
+        <br/>
+      </footer>
     </div>
   );
 }
