@@ -1,5 +1,5 @@
 html {
-    font-size: 21px;
+    font-size: 16px;
 }
 
 * {
@@ -8,61 +8,59 @@ html {
 }
 
 body {
-    font-family: 'helvetica neue', helvetica, sans-serif;
-    background-color: #111111;
-    color: #dddddd;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    background-color: #282828;
+    color: #ebdbb2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-    display: block;
-    line-height: 1;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    margin-top: 0;
-    padding-top: 1rem;
-    margin: 0;
-    font-weight: bold;
-    padding-bottom: 1.0rem;
+    color: #83a598;
 }
 
-.pageHeader {
-    font-size: 2.4rem;
+h1:before {
+    content: "*";
+    padding-right: 10px;
 }
 
-small {
-    font-size: 1.5rem;
-    display: block;
-    padding-bottom: 0.2rem;
+h2 {
+    color: #b8bb26;
 }
 
-@media screen and (min-width: 30em) {
-    .pageHeader {
-        font-size: 3.7rem;
+h2:before {
+    content: "**";
+    padding-right: 10px;
+}
+
+li {
+    color: #d3869b;
+}
+
+li:before {
+    content: "***";
+    padding-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.emoji {
+    font-family: 'helvetica neue', helvetica, sans-serif;
+}
+
+@media screen and (min-width: 40rem) {
+    html {
+        font-size: 21px;
     }
-
-    small {
-        font-size: 2rem;
-    }
-}
-
-.pageSubtitle {
-    font-weight: 300;
-    font-size: 1.4rem;
-    padding-bottom: 0.5rem;
-}
-
-.navLinks {
-    font-size: 1.25rem;
 }
 
 main {
     margin-right: auto;
     margin-left: auto;
-    max-width: 40rem;
+    max-width: 50rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -71,12 +69,8 @@ article {
     border-color: #333333;
     border-bottom-style: solid;
     border-bottom-width: 0.005rem;
-    padding-bottom: 1rem;
-}
-
-.articleHeader {
-    font-weight: 400;
-    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 footer {
@@ -84,12 +78,8 @@ footer {
     padding-bottom: 1.0rem;
 }
 
-p {
-    font-weight: 300;
-}
-
 a:link {
-    color: rgb(10,132,255);;
+    color: #fb4934;
 }
 a:link.light-blue {
     color: #00449E; 
@@ -99,9 +89,4 @@ a:visited {
 }
 a:visited.light-blue {
     color: #5E2CA5;
-}
-
-ul {
-    list-style-type: square;
-    list-style-position: inside;
 }
