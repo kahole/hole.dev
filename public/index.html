@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Kristian Andersen Hole"
     />
 
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon/favicon.ico" />
@@ -31,44 +31,44 @@
   </head>
   <body>
     <noscript>
-      <div className="App">
-        <article>
-          <h1><small>(developer </small>
-            Kristian Hole)</h1>
-          <h2>Consultant at Netlight ☔</h2>
-          <nav>
-            <ul>
-              <li><a className="navLinks" href="#projects">Projects</a></li>
-              <li><a className="navLinks" href="#lisp">Lisp interpreter</a></li>
-              <li><a className="navLinks" href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </article>
-        <article>
-          <h1 className="articleHeader" id="projects">Projects</h1>
-          <ul>
-            <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">NPM</a>)</li>
-            <li>Lisp and Reflective Tower in JS (<a href="https://github.com/kahole/lisp_in_js">Github</a>)</li>
-            <li><a href="ppp_webgl">Tiny Planet</a></li>
-          </ul>
-        </article>
-        <article>
-          <h1 className="articleHeader" id="lisp">Lisp interpreter</h1>
-          <LispREPL />
+      <link rel="stylesheet" type="text/css" href="noscript/index.css">
+      <main>
+        <div class="App">
+          <h1>Kristian Andersen Hole <span class="emoji" role="img" aria-label="umbrella">☔</span></h1>
+          <article>
+            <h2>Consultant @ <a href="https://www.netlight.com/">Netlight</a></h2>
+          </article>
           <br/>
-          <p>See full list of built-in funtions <a href="https://github.com/kahole/lisp_in_js#builtins">here.</a></p>
-        </article>
-        <article>
-          <h1 className="articleHeader" id="contact">Contact</h1>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/kristian-andersen-hole-513421bb">LinkedIn</a></li>
-            <li><a href="https://github.com/kahole">Github</a></li>
-          </ul>
-        </article>
-        <footer>
-          <p>Updated 2019/09/20</p>
-        </footer>
-      </div>
+          <article>
+            <h2 id="projects">Projects</h2>
+            <ul>
+              <li>Magit for VSCode (<a href="https://marketplace.visualstudio.com/items?itemName=kahole.magit">VS Marketplace</a>)</li>
+              <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">NPM</a>)</li>
+              <li>Lisp and Reflective Tower in JS (<a href="https://github.com/kahole/lisp_in_js">Github</a>)</li>
+              <li><a href="ppp_webgl">WebGL demo</a></li>
+            </ul>
+          </article>
+          <br/>
+          <article>
+            <h2 id="articles">Articles</h2>
+            <ul>
+              <li>Thesis</li>
+              <small><a href="http://hdl.handle.net/11250/2625818">An evaluation of join-strategies in a distributed MySQL plugin architecture</a></small>
+            </ul>
+          </article>
+          <br/>
+          <article>
+            <h2 id="contact">Contact</h2>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/kristian-andersen-hole-513421bb">LinkedIn</a></li>
+              <li><a href="https://github.com/kahole">Github</a></li>
+            </ul>
+          </article>
+          <footer>
+            <br/>
+          </footer>
+        </div>
+      </main>
     </noscript>
     <main id="root"></main>
     <!--
