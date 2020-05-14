@@ -20,6 +20,7 @@
     padding-left: 0.2rem;
     padding-top: 0.2rem;
     font-size: 18px;
+    font-weight: bold;
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
@@ -36,11 +37,11 @@
     flex: 1;
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 18px;
-    padding: 0.25rem;
+    padding: 0.25rem 0 0.28rem 0.25rem;
 }
 
 .replInput {
-    color:white;
+    color:#ebdbb2;
     outline:none;
     transition:height 1s;
     -webkit-transition:height 1s;
@@ -57,4 +58,5 @@
 
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 18px;
+    font-weight: bold;
 }

@@ -99,8 +99,8 @@ function LispREPL() {
     <div className="LispREPL">
       <div className="repl">
         <div className="replInputWrapper">
-          <span className="replPrompt">&gt;</span>
-      <input className="replInput" value={currentLine} onChange={onCurrentLineChange} onKeyPress={onCurrentLineKeyPress} onKeyDown={onCurrentLineKeyDown} />
+          <span className="replPrompt"><b>&gt;</b></span>
+          <input className="replInput" value={currentLine} onChange={onCurrentLineChange} onKeyPress={onCurrentLineKeyPress} onKeyDown={onCurrentLineKeyDown} />
         </div>
         { historyList.reverse() }
       </div>
