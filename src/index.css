@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: source-code-pro, Hack, Menlo, 'Droid Sans Mono', Monaco, Consolas, "Courier New", monospace;
     background-color: #1d2021;
     color: #ebdbb2;
     -webkit-font-smoothing: antialiased;
