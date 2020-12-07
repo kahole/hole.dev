@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/fredagsfika/static/css/main.645f6edd.chunk.css",
-    "main.js": "/fredagsfika/static/js/main.65d9bb47.chunk.js",
-    "main.js.map": "/fredagsfika/static/js/main.65d9bb47.chunk.js.map",
+    "main.js": "/fredagsfika/static/js/main.63faae47.chunk.js",
+    "main.js.map": "/fredagsfika/static/js/main.63faae47.chunk.js.map",
     "runtime-main.js": "/fredagsfika/static/js/runtime-main.1c372030.js",
     "runtime-main.js.map": "/fredagsfika/static/js/runtime-main.1c372030.js.map",
     "static/js/2.8a102e19.chunk.js": "/fredagsfika/static/js/2.8a102e19.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1c372030.js",
     "static/js/2.8a102e19.chunk.js",
     "static/css/main.645f6edd.chunk.css",
-    "static/js/main.65d9bb47.chunk.js"
+    "static/js/main.63faae47.chunk.js"
   ]
 }
