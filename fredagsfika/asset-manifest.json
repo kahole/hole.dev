@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/fredagsfika/static/css/main.e4cadd4e.chunk.css",
-    "main.js": "/fredagsfika/static/js/main.e136e5ea.chunk.js",
-    "main.js.map": "/fredagsfika/static/js/main.e136e5ea.chunk.js.map",
+    "main.css": "/fredagsfika/static/css/main.62aa5fd9.chunk.css",
+    "main.js": "/fredagsfika/static/js/main.531bd9dd.chunk.js",
+    "main.js.map": "/fredagsfika/static/js/main.531bd9dd.chunk.js.map",
     "runtime-main.js": "/fredagsfika/static/js/runtime-main.1c372030.js",
     "runtime-main.js.map": "/fredagsfika/static/js/runtime-main.1c372030.js.map",
     "static/js/2.13117395.chunk.js": "/fredagsfika/static/js/2.13117395.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.6192ee2a.chunk.js": "/fredagsfika/static/js/3.6192ee2a.chunk.js",
     "static/js/3.6192ee2a.chunk.js.map": "/fredagsfika/static/js/3.6192ee2a.chunk.js.map",
     "index.html": "/fredagsfika/index.html",
-    "static/css/main.e4cadd4e.chunk.css.map": "/fredagsfika/static/css/main.e4cadd4e.chunk.css.map",
+    "static/css/main.62aa5fd9.chunk.css.map": "/fredagsfika/static/css/main.62aa5fd9.chunk.css.map",
     "static/js/2.13117395.chunk.js.LICENSE.txt": "/fredagsfika/static/js/2.13117395.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1c372030.js",
     "static/js/2.13117395.chunk.js",
-    "static/css/main.e4cadd4e.chunk.css",
-    "static/js/main.e136e5ea.chunk.js"
+    "static/css/main.62aa5fd9.chunk.css",
+    "static/js/main.531bd9dd.chunk.js"
   ]
 }
