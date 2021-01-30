@@ -9,7 +9,7 @@ function App() {
       <article>
         <h2>Consultant @ <a href="https://www.netlight.com/">Netlight</a></h2>
       </article>
-      <br/>
+      <br />
       {/* <nav>
         <ul>
           <li><a className="navLinks" href="#projects">Projects</a></li>
@@ -27,23 +27,25 @@ function App() {
           {/* <li><a href="ppp_webgl">WebGL demo</a></li> */}
         </ul>
       </article>
-      <br/>
+      <br />
       <article>
         <h2 id="articles">Articles</h2>
         <ul>
+          <li><a href="articles/edamagit-introduction/">Edamagit introduction</a></li>
+          <br />
           <li>Thesis</li>
           <small><a href="http://hdl.handle.net/11250/2625818">An evaluation of join-strategies in a distributed MySQL plugin architecture</a></small>
         </ul>
       </article>
-      <br/>
+      <br />
       <article>
         <h2 id="lisp">Lisp interpreter</h2>
-        <br/>
+        <br />
         <LispREPL />
-        <br/>
+        <br />
         <p>List of built-in funtions <a href="https://github.com/kahole/lisp_in_js/blob/master/builtins.md">here</a></p>
       </article>
-      <br/>
+      <br />
       <article>
         <h2 id="contact">Contact</h2>
         <ul>
@@ -59,7 +61,7 @@ function App() {
       </article>*/}
       <footer>
         {/* <p>Updated 2020/03/16</p> */}
-        <br/>
+        <br />
       </footer>
     </div>
   );
