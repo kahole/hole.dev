@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>TUTORIAL</title>
+  <title>Edamagit Introduction</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -13,79 +13,71 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
 </head>
 <body>
-<h1 id="introduction-to-edamagit">Introduction to <code>edamagit</code></h1>
-<p><a href="https://marketplace.visualstudio.com/items?itemName=kahole.magit">edamagit</a> is a keyboard driven Git interface in the style of the emacs extension <a href="https://magit.vc/">magit</a>.</p>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#introduction-to-edamagit">Introduction to edamagit</a>
+<ul>
+<li><a href="#status-view">Status View</a></li>
+<li><a href="#navigating-the-menus">Navigating the menus</a></li>
+<li><a href="#committing">Committing</a></li>
+<li><a href="#switches">Switches</a></li>
+<li><a href="#tips-tricks">Tips &amp; Tricks</a></li>
+<li><a href="#learn-more">Learn more</a></li>
+</ul></li>
+</ul>
+</nav>
+<h2 id="introduction-to-edamagit">Introduction to edamagit</h2>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=kahole.magit">edamagit</a> is a keyboard driven git interface in the style of the emacs extension <a href="https://magit.vc/">magit</a>.</p>
 <p>Git commands are mapped to keypresses for efficient use. E.g. pressing <code>b c</code> will allow you to checkout a new branch.</p>
-<p>You can install it in VSCode by searching for <code>edamagit</code> in the extension manager.</p>
-<p>Or find it on one of these marketplaces - <a href="https://marketplace.visualstudio.com/items?itemName=kahole.magit">VSCode Marketplace</a> - <a href="https://open-vsx.org/extension/kahole/magit">OpenVSX</a></p>
+<p>Install it in VSCode by searching for <code>edamagit</code> in the extension manager.</p>
+<p>Or get it here on one of these marketplaces - <a href="https://marketplace.visualstudio.com/items?itemName=kahole.magit">VSCode Marketplace</a> - <a href="https://open-vsx.org/extension/kahole/magit">OpenVSX</a></p>
 <h3 id="status-view">Status View</h3>
 <p>Bring up the status view by pressing <code>Alt+x g</code> <em>(<code>Alt</code> and <code>x</code> together, then <code>g</code> by itself)</em>. Or by running the command <code>'Magit Status'</code> in the vscode <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">command palette</a>.</p>
-<p>Once in the status view, you can press <code>Tab</code> to fold and unfold sections, files, and change hunks.</p>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/tab_closed.jpg" title="Section closed" alt="" /><figcaption>Section closed</figcaption>
-</figure>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/tab_open.jpg" title="Section open" alt="" /><figcaption>Section open</figcaption>
-</figure>
+<p>Once in the status view, press <code>Tab</code> to fold and unfold sections, files, and change hunks.</p>
+<p>Place the cursor on a section</p>
+<p><img src="https://hole.dev/images/edamagit_introduction/tab_closed.jpg" /></p>
+<p>press <code>Tab</code> to unfold/fold:</p>
+<p><img src="https://hole.dev/images/edamagit_introduction/tab_open.jpg" /></p>
+<h4 id="staging">Staging</h4>
 <p>Pressing <code>s</code> and <code>u</code> allows you to stage and unstage changes under the cursor. Either a file, change hunk, or a just a selected part of a hunk.</p>
-<p>From:</p>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/unstaged_file.jpg" title="Unstaged" alt="" /><figcaption>Unstaged</figcaption>
-</figure>
-<p>then pressing <code>s</code> will stage the file:</p>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/staged_file.jpg" title="Staged" alt="" /><figcaption>Staged</figcaption>
-</figure>
-<p><code>a</code> to apply the entity under the cursor. E.g. apply a stash</p>
-<p><code>k</code> to delete changes/file/stash under cursor.</p>
-<p><code>Enter</code> to open up the entity under cursor. (E.g. show commit details or open a file)</p>
+<p>From</p>
+<p><img src="https://hole.dev/images/edamagit_introduction/unstaged_file.jpg" /></p>
+<p>pressing <code>s</code> will stage the file:</p>
+<p><img src="https://hole.dev/images/edamagit_introduction/staged_file.jpg" /></p>
+<h4 id="other-status-view-actions">Other status view actions</h4>
+<ul>
+<li><code>a</code> to apply the entity under the cursor. E.g. apply a stash</li>
+<li><code>k</code> to delete changes/file/stash under cursor.</li>
+<li><code>Enter</code> to open up the entity under cursor. (E.g. show commit details or open a file)</li>
+</ul>
 <h3 id="navigating-the-menus">Navigating the menus</h3>
 <p>From the status view press <code>?</code> to bring up the help view.</p>
-<p>This shows you the available edamagit menus and which key to press to invoke them.</p>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/help_view.jpg" title="Help view" alt="" /><figcaption>Help view</figcaption>
-</figure>
-<p>e.g. <code>b Branch</code></p>
-<p>pressing <code>b</code> brings up the <code>Branching</code>-menu.</p>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/branching_menu_1.jpg" title="Branching menu" alt="" /><figcaption>Branching menu</figcaption>
-</figure>
+<p>This shows you the available edamagit menus and which key to press to invoke them. For example, pressing<code>b Branch</code> brings up the <code>Branching</code>-menu.</p>
+<p><img src="https://hole.dev/images/edamagit_introduction/help_view.jpg" /></p>
 <p>This menu-system is based on a modified version of VSCode’s QuickPick selection menu.</p>
-<p>Similarly to the help view, the entries in this menu show a key and which action it activates.</p>
-<p>e.g. <code>c Checkout new branch</code></p>
+<p>Similarly to the help view, the entries in this menu show a key and which action it activates. (e.g. <code>c Checkout new branch</code>)</p>
 <p>From here, a single press of <code>c</code> invokes the action <code>Checkout new branch</code>.</p>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/branching_menu_2.jpg" title="Branching menu" alt="" /><figcaption>Branching menu</figcaption>
-</figure>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/branching_menu_3.jpg" title="Branching menu" alt="" /><figcaption>Branching menu</figcaption>
-</figure>
-<p>…….</p>
+<p><img src="https://hole.dev/images/edamagit_introduction/branching_menu_1.jpg" /></p>
+<p>Choose a branch to base the new branch on. Search and/or select with arrow keys. Confirm choice with choice with <code>Enter</code>.</p>
+<p><img src="https://hole.dev/images/edamagit_introduction/branching_menu_2.jpg" /></p>
+<p>Give the new branch a name and press <code>Enter</code></p>
+<p><img src="https://hole.dev/images/edamagit_introduction/branching_menu_3.jpg" /></p>
 <h3 id="committing">Committing</h3>
-<p>Once you have staged some changes and are ready to commit press <code>c</code> to bring up commiting menu, and <code>c</code> once again to start a normal commit.</p>
+<p>Now you have staged some changes and want to commit. Press <code>c</code> to bring up committing menu, and <code>c</code> once again to start a normal commit.</p>
 <p>This brings up the commit view where you will write a commit message. Next to an editor showing which changes you are committing is shown.</p>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/committing.jpg" title="Committing view" alt="" /><figcaption>Committing view</figcaption>
-</figure>
-<p>Once you have written a commit-message press <code>ctrl+c ctrl+c</code> to finish the commit. Or you can manually save and close the commit-message editor, this has the same effect.</p>
+<p><img src="https://hole.dev/images/edamagit_introduction/committing.jpg" /></p>
+<p>Once you have written a commit-message press <code>ctrl+c ctrl+c</code> to finish the commit. Or manually save and close the commit-message editor, this has the same effect.</p>
 <p><code>ctrl+c ctrl+k</code> wil abort the commit.</p>
 <h3 id="switches">Switches</h3>
 <p>Some git commands are frequently used with switches or flags to enable some behaviours. E.g. <code>push --force</code></p>
 <p>Many of the edamagit command menus have a switches menu which can be activated by pressing <code>-</code>.</p>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/switches_1.jpg" title="Switches" alt="" /><figcaption>Switches menu</figcaption>
-</figure>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/switches_2.jpg" title="Switches" alt="" /><figcaption>Switches menu</figcaption>
-</figure>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/switches_3.jpg" title="Switches" alt="" /><figcaption>Switches menu</figcaption>
-</figure>
-<figure>
-<img src="https://hole.dev/images/edamagit_introduction/switches_4.jpg" title="Switches" alt="" /><figcaption>Switches menu</figcaption>
-</figure>
+<p><img src="https://hole.dev/images/edamagit_introduction/switches_1.jpg" /></p>
+<p><img src="https://hole.dev/images/edamagit_introduction/switches_2.jpg" /></p>
+<p><img src="https://hole.dev/images/edamagit_introduction/switches_3.jpg" /></p>
+<p><img src="https://hole.dev/images/edamagit_introduction/switches_4.jpg" /></p>
 <h3 id="tips-tricks">Tips &amp; Tricks</h3>
 <ul>
 <li>Using the vscode command palette and typing <code>Magit</code> will show you all available magit actions from where you currently are.</li>
@@ -98,6 +90,5 @@
 <li><a href="https://magit.vc/manual/magit.html">Emacs Magit User Manual</a></li>
 </ul>
 <p>Updated 2021/01/29</p>
-<h1 id="grammarly">Grammarly</h1>
 </body>
 </html>
