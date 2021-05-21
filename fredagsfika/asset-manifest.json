@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/fredagsfika/static/css/main.f99db1b2.chunk.css",
-    "main.js": "/fredagsfika/static/js/main.61c2c0de.chunk.js",
-    "main.js.map": "/fredagsfika/static/js/main.61c2c0de.chunk.js.map",
+    "main.css": "/fredagsfika/static/css/main.cdc8474f.chunk.css",
+    "main.js": "/fredagsfika/static/js/main.9c3e94ed.chunk.js",
+    "main.js.map": "/fredagsfika/static/js/main.9c3e94ed.chunk.js.map",
     "runtime-main.js": "/fredagsfika/static/js/runtime-main.8752d819.js",
     "runtime-main.js.map": "/fredagsfika/static/js/runtime-main.8752d819.js.map",
-    "static/js/2.b460156f.chunk.js": "/fredagsfika/static/js/2.b460156f.chunk.js",
-    "static/js/2.b460156f.chunk.js.map": "/fredagsfika/static/js/2.b460156f.chunk.js.map",
+    "static/js/2.b6762fc9.chunk.js": "/fredagsfika/static/js/2.b6762fc9.chunk.js",
+    "static/js/2.b6762fc9.chunk.js.map": "/fredagsfika/static/js/2.b6762fc9.chunk.js.map",
     "static/js/3.1b4437c7.chunk.js": "/fredagsfika/static/js/3.1b4437c7.chunk.js",
     "static/js/3.1b4437c7.chunk.js.map": "/fredagsfika/static/js/3.1b4437c7.chunk.js.map",
     "index.html": "/fredagsfika/index.html",
-    "static/css/main.f99db1b2.chunk.css.map": "/fredagsfika/static/css/main.f99db1b2.chunk.css.map",
-    "static/js/2.b460156f.chunk.js.LICENSE.txt": "/fredagsfika/static/js/2.b460156f.chunk.js.LICENSE.txt"
+    "static/css/main.cdc8474f.chunk.css.map": "/fredagsfika/static/css/main.cdc8474f.chunk.css.map",
+    "static/js/2.b6762fc9.chunk.js.LICENSE.txt": "/fredagsfika/static/js/2.b6762fc9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8752d819.js",
-    "static/js/2.b460156f.chunk.js",
-    "static/css/main.f99db1b2.chunk.css",
-    "static/js/main.61c2c0de.chunk.js"
+    "static/js/2.b6762fc9.chunk.js",
+    "static/css/main.cdc8474f.chunk.css",
+    "static/js/main.9c3e94ed.chunk.js"
   ]
 }
