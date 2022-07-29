@@ -21,9 +21,10 @@ function App() {
         <h2 id="projects">Projects</h2>
         <ul>
           <li>edamagit - Magit for VSCode (<a href="https://marketplace.visualstudio.com/items?itemName=kahole.magit">VS Marketplace</a>|<a href="https://github.com/kahole/edamagit">Github</a>)</li>
-          <li>*scratch*.js - Interactive JS scratchpad (<a href="scratch">*scratch*</a>|<a href="https://gist.github.com/kahole/651990b888c19b84d5700422daa961de">Gist</a>)</li>
-          <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">NPM</a>|<a href="https://github.com/kahole/egna">Github</a>)</li>
+          <li>gnistfanger - 3d art (<a href="/articles/gnistfanger">Gallery</a>)</li>
           <li>Lisp and Reflective Tower in JS (<a href="https://github.com/kahole/lisp_in_js">Github</a>)</li>
+          <li>Egna - Javascript Pattern Matching (<a href="https://www.npmjs.com/package/egna">NPM</a>|<a href="https://github.com/kahole/egna">Github</a>)</li>
+          <li>*scratch*.js - Interactive JS scratchpad (<a href="scratch">*scratch*</a>|<a href="https://gist.github.com/kahole/651990b888c19b84d5700422daa961de">Gist</a>)</li>
           {/* <li><a href="ppp_webgl">WebGL demo</a></li> */}
         </ul>
       </article>
