@@ -33,6 +33,7 @@ function App() {
         <h2 id="articles">Articles</h2>
         <ul>
           <li><a href="articles/edamagit-introduction/">Edamagit introduction</a></li>
+          <li><a href="https://www.nora.ai/news-and-events/news/meet-the-winners-of-fishai.html" rel="noopener">Winners of NORA's FishAI: Sustainable Commercial Fishing competition</a></li>
           <br />
           <li>Thesis</li>
           <small><a href="http://hdl.handle.net/11250/2625818">An evaluation of join-strategies in a distributed MySQL plugin architecture</a></small>
