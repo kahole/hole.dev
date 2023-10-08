@@ -1,7 +1,7 @@
 {
   "name": "hole.dev",
   "version": "0.1.0",
-  "homepage": "https://hole.dev",
+  "homepage": "https://kahole.github.io/hole.dev/",
   "private": true,
   "dependencies": {
     "egna": "^2.0.2",
