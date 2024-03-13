@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>Kristian Andersen Hole <span className="emoji" role="img" aria-label="umbrella">☔</span></h1>
       <article>
-        <h2>Consultant @ <a href="https://www.netlight.com/">Netlight</a></h2>
+        <h2>Co-founder of <a href="https://www.catchwise.no/">Catchwise</a></h2>
       </article>
       <br />
       {/* <nav>
